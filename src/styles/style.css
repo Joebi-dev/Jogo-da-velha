@@ -49,6 +49,7 @@ body {
     text-align: center;
     color: #b32828;
     border-radius: 3px;
+    border-color: black;
     border-style: hidden;
     cursor: pointer;
     font-size: 70px;
