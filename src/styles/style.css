@@ -7,19 +7,19 @@ body {
 }
 
 
-#painel {
-    background-color: rgb(179, 255, 0);
+#placar {
     border-radius: 0px 0px 5px 5px;
     overflow: hidden;
     margin: 0px 10px 0px 10px;
     height: 15%;
 }
 
-#vez {
-    background-color: cadetblue;
+#painel {
     border-radius: 5px 5px 0px 0px;
-    overflow: hidden;
+    grid-template-columns: repeat(3, 1fr);
     margin: 0px 10px 0px 10px;
+    overflow: hidden;
+    display: grid;
     height: 10%;
 }
 
@@ -36,13 +36,39 @@ body {
     background-color: rgb(0, 0, 0);
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    height: 70%;
     display: grid;
-    padding-top: 10px;
-    padding-left: 10px;
     border: 20px;
+    height: 70%;
+    gap: 10px;
+    padding: 10px
 }
 
+#placar {
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+#o,
+#x, #vez {
+    background-color: #b32828;
+    justify-content: center;
+    text-align: center;
+    color: #ffffff;
+    font-size: 100%;
+    height: auto;
+    width: auto;
+}
+
+#vez {
+    background-color: cadetblue;
+    color: #b32828;
+    font-size: 50px;
+}
+
+#x {
+    background-color: #0000FF;
+}
 
 .campo {
     background-color: #7AE4E4;
@@ -53,8 +79,8 @@ body {
     border-style: hidden;
     cursor: pointer;
     font-size: 70px;
-    max-width: 90%;
-    max-height: 90%;
+    max-width: 100%;
+    max-height: 100%;
 }
 
 .campo:hover {
