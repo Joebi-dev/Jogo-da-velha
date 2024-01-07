@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const campo = document.createElement('button')
         campo.classList.add('campo')
         campo.addEventListener("click", () => jogada(i))
+        campo.setAttribute('title','Clique para jogar')
         jogo.appendChild(campo)
     }
 
