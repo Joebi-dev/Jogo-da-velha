@@ -17,6 +17,7 @@ body {
 #painel {
     border-radius: 5px 5px 0px 0px;
     grid-template-columns: repeat(3, 1fr);
+    font-size: 16px;
     margin: 0px 10px 0px 10px;
     overflow: hidden;
     display: grid;
@@ -50,12 +51,14 @@ body {
 }
 
 #o,
-#x, #vez {
+#x, 
+#vez {
     background-color: #b32828;
     justify-content: center;
     text-align: center;
     color: #ffffff;
-    font-size: 100%;
+    font-size: 30px;
+    font-display: initial;
     height: auto;
     width: auto;
 }
@@ -63,7 +66,7 @@ body {
 #vez {
     background-color: cadetblue;
     color: #b32828;
-    font-size: 50px;
+    font-size: 30px ;
 }
 
 #x {
@@ -81,12 +84,13 @@ body {
     font-size: 70px;
     max-width: 100%;
     max-height: 100%;
+    transition: all 0.3s;
 }
 
 .campo:hover {
     background-color: #36C6C6;
     border-style: double;
-    font-size: 80px;
+    font-size: 75px;
 
 }
 
