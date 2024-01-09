@@ -44,7 +44,6 @@ body {
 }
 
 #placar {
-
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
@@ -63,11 +62,10 @@ body {
 
 #vez {
     background-color: cadetblue;
-    color: #b32828;
     font-size: 7vh;
 }
 
-#x {
+#o {
     background-color: #0000FF;
 }
 
@@ -89,7 +87,8 @@ body {
 .campo:hover {
     background-color: #2cacac;
     border-color: #000000;
-    border-style: outset;
+    border-style: solid;
+    border-radius: 5px;
     font-size: 9.5vh;
 }
 
