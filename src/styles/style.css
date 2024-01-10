@@ -6,30 +6,40 @@ body {
     margin: 0;
 }
 
+button {
+    text-shadow: 2px 2px 2px rgb(117, 117, 117);
+    color:black;
+    font-size: 3vh;
+    height: 100%;
+    width: auto;
+}
 
 #placar {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     border-radius: 0px 0px 5px 5px;
     overflow: hidden;
-    margin: 0px 10px 0px 10px;
-    height: 15%;
+    height: 14%;
+
 }
 
 #painel {
-    border-radius: 5px 5px 0px 0px;
-    grid-template-columns: repeat(3, 1fr);
-    margin: 0px 10px 0px 10px;
-    overflow: hidden;
     display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border-radius: 5px 5px 0px 0px;
+    overflow: hidden;
     height: 10%;
+    margin-top: 1%;
 }
 
 #conteiner {
     margin-top: 30px;
     background-color: rgb(0, 0, 0);
-    width: 300px;
+    min-width: 300px;
     height: 500px;
     border-radius: 10px;
     overflow: hidden;
+    padding: 5px 5px 5px;
 }
 
 #jogo {
@@ -37,16 +47,10 @@ body {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
     display: grid;
-    border: 20px;
-    height: 70%;
+    height: 75%;
     gap: 5px;
-    padding: 10px
 }
 
-#placar {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-}
 
 #o,
 #x,
@@ -55,7 +59,7 @@ body {
     text-shadow: 2px 2px 2px black;
     text-align: center;
     color: #ffffff;
-    font-size: 10vh;
+    font-size: 8vh;
     height: auto;
     width: auto;
 }
@@ -81,8 +85,6 @@ body {
     font-size: 8vh;
     max-width: 100%;
     max-height: 100%;
-
-
 }
 
 .campo:hover {
@@ -100,13 +102,12 @@ body {
 @media (max-width: 1080px) {
     body {
         display: flex;
-        height: 100vh;
+        height: 95vh;
     }
 
     #conteiner {
-        margin: 40px;
+        margin: 30px;
         width: 100%;
-        height: 100vh;
+        height: 90vh;
     }
-
 }
